@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Nishtha Pardesi — AI & Data Science Engineer, Full Stack Developer, Internship at Kh Infinite Possibilities. Building intelligent systems from Pune."/>
+  <title>Nishtha Pardesi ✦ Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"><div class="cursor-inner"></div></div>
+
+  <!-- NOISE -->
+  <div class="grain"></div>
+
+  <!-- LOADING SCREEN -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">NP</div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-text" id="loaderText">Initializing...</div>
+    </div>
+  </div>
+
+  <!-- MARQUEE TICKER TOP -->
+  <div class="ticker-wrap top-ticker" id="topTicker">
+    <div class="ticker-track">
+      <span>AI &amp; DATA SCIENCE ✦</span>
+      <span>FULL STACK DEV ✦</span>
+      <span>DEEP LEARNING ✦</span>
+      <span>PUNE, INDIA ✦</span>
+      <span>OPEN TO WORK ✦</span>
+      <span>PYTHON · REACT · FLASK ✦</span>
+      <span>AI &amp; DATA SCIENCE ✦</span>
+      <span>FULL STACK DEV ✦</span>
+      <span>DEEP LEARNING ✦</span>
+      <span>PUNE, INDIA ✦</span>
+      <span>OPEN TO WORK ✦</span>
+      <span>PYTHON · REACT · FLASK ✦</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-star">✦</span> nishtha
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#about" class="nav-item" data-label="about">About</a></li>
+      <li><a href="#experience" class="nav-item" data-label="exp">Experience</a></li>
+      <li><a href="#projects" class="nav-item" data-label="work">Work</a></li>
+      <li><a href="#academics" class="nav-item" data-label="grades">Academics</a></li>
+      <li><a href="#contact" class="nav-item" data-label="contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <!-- Dark/Light toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+        <span class="theme-icon theme-icon-dark">🌙</span>
+        <span class="theme-icon theme-icon-light">☀️</span>
+      </button>
+      <a href="mailto:nishtha.pardesi@gmail.com" class="nav-cta">
+        <span>Hire Me</span>
+        <span class="cta-arrow">↗</span>
+      </a>
+      <button class="nav-burger" id="burger" aria-label="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+
+    <!-- Floating deco orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <canvas id="heroCanvas"></canvas>
+
+    <div class="hero-wrap">
+      <div class="hero-badge-row">
+        <div class="badge-chip">
+          <span class="chip-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <div class="badge-chip outline">
+          <span>AI &amp; DS · Pune · 2026</span>
+        </div>
+      </div>
+
+      <h1 class="hero-name" id="heroName">
+        <span class="name-line" data-text="Nishtha">Nishtha</span>
+        <span class="name-line accent" data-text="Pardesi">Pardesi</span>
+      </h1>
+
+      <div class="hero-role-wrap">
+        <span class="role-prefix">—</span>
+        <div class="hero-role" id="heroRole">
+          <span class="role-word" id="roleWord">AI Engineer</span>
+        </div>
+      </div>
+
+      <p class="hero-desc">
+        Third-year <strong>AI &amp; Data Science</strong> engineering student from Pune.
+        I build intelligent systems, beautiful interfaces, and everything in between.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="cta-primary">
+          <span>See My Work</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="cta-secondary">Say Hello ↗</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/nishtha911" target="_blank" class="social-pill">GH</a>
+        <a href="https://linkedin.com/in/nishtha-pardesi" target="_blank" class="social-pill">LI</a>
+        <a href="https://instagram.com/nishtha_911" target="_blank" class="social-pill">IG</a>
+        <a href="https://x.com/nishtha_911" target="_blank" class="social-pill">𝕏</a>
+        <a href="https://pinterest.com/nishtha_911" target="_blank" class="social-pill">PT</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-num">01</span>
+        <span class="tag-line"></span>
+        <span class="tag-label">About me</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left" data-scroll-reveal="left">
+          <h2 class="section-heading">
+            More than just<br/>a <em>developer</em>.
+          </h2>
+          <p class="about-para">
+            I'm Nishtha — an AI &amp; Data Science engineer who genuinely loves building things. Not just apps, but experiences. I care about the details: the micro-interaction, the right font weight, the clean API design.
+          </p>
+          <p class="about-para">
+            Outside of code, I draw, paint, obsessively perfect pasta recipes, and am very enthusiastic about sleeping. I also love solving jigsaw puzzles — the messier, the better. I believe the best engineers are also creatives.
+          </p>
+          <p class="about-para">
+            I'm also the <strong>Publicity Co-Head</strong> of <strong>CoDE</strong> (Club of Data Engineers) — my department's official tech club.
+          </p>
+
+          <div class="about-tags-row">
+            <div class="a-tag">🎨 Artist</div>
+            <div class="a-tag">🍝 Pasta Chef</div>
+            <div class="a-tag">💤 Professional Sleeper</div>
+            <div class="a-tag">⚡ CoDE Club</div>
+            <div class="a-tag">🏏 Cricket Fan</div>
+            <div class="a-tag">🎾 Tennis Fan</div>
+            <div class="a-tag">🏸 Badminton Player</div>
+            <div class="a-tag">🧩 Jigsaw Lover</div>
+          </div>
+        </div>
+
+        <div class="about-right" data-scroll-reveal="right">
+          <div class="about-card-stack">
+            <!-- ID Card -->
+            <div class="id-card">
+              <div class="id-card-header">
+                <div class="id-brand">
+                  <span class="id-star">✦</span>
+                  <span>Student ID</span>
+                </div>
+                <div class="id-status">ACTIVE</div>
+              </div>
+              <div class="id-avatar">
+                <div class="avatar-placeholder">NP</div>
+              </div>
+              <div class="id-info">
+                <h3 class="id-name">Nishtha Pardesi</h3>
+                <p class="id-role">AI &amp; Data Science Engineering</p>
+                <p class="id-uni">6th Semester · Pune, India</p>
+              </div>
+              <div class="id-footer">
+                <div class="id-chip"></div>
+                <div class="id-barcode">
+                  <span>nishtha911</span>
+                  <div class="barcode-lines"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating mini card -->
+            <div class="mini-card mc-1">
+              <span class="mc-icon">🏛️</span>
+              <div>
+                <strong>CoDE Club</strong>
+                <span>Publicity Co-Head</span>
+              </div>
+            </div>
+            <div class="mini-card mc-2">
+              <span class="mc-icon">📍</span>
+              <div>
+                <strong>Pune, India</strong>
+                <span>UTC +05:30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / INTERNSHIP -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-num">02</span>
+        <span class="tag-line"></span>
+        <span class="tag-label">Experience</span>
+      </div>
+      <h2 class="section-heading" data-scroll-reveal>Where I've worked</h2>
+
+      <div class="exp-timeline">
+        <div class="exp-card" data-scroll-reveal>
+          <div class="exp-left">
+            <div class="exp-dot-wrap">
+              <div class="exp-dot"></div>
+              <div class="exp-line"></div>
+            </div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-header">
+              <div>
+                <span class="exp-period">Jan 2025 – Mar 2025</span>
+                <h3 class="exp-role">Software Development Intern</h3>
+                <p class="exp-company">
+                  <a href="https://github.com/nishtha911/email-template-builder" target="_blank">
+                    Kh Infinite Possibilities Pvt. Ltd.
+                    <span class="exp-link-icon">↗</span>
+                  </a>
+                </p>
+              </div>
+              <div class="exp-badge">Internship</div>
+            </div>
+
+            <p class="exp-desc">
+              Built a production-ready <strong>drag-and-drop Email Template Builder</strong> from scratch — a full-stack application used internally to design and manage email campaigns with a visual editor.
+            </p>
+
+            <div class="exp-highlights">
+              <div class="highlight-item">
+                <span class="h-icon">⚡</span>
+                <span>Full-stack drag-and-drop email editor with live preview</span>
+              </div>
+              <div class="highlight-item">
+                <span class="h-icon">🧱</span>
+                <span>React + TypeScript frontend with component-based architecture</span>
+              </div>
+              <div class="highlight-item">
+                <span class="h-icon">🔌</span>
+                <span>Express + TypeScript REST API backend</span>
+              </div>
+              <div class="highlight-item">
+                <span class="h-icon">🎨</span>
+                <span>MUI-based design system with collapsible sidebar &amp; context-aware controls</span>
+              </div>
+            </div>
+
+            <div class="exp-tech">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Express.js</span>
+              <span>PostgreSQL</span>
+              <span>MUI</span>
+              <span>REST API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-num">03</span>
+        <span class="tag-line"></span>
+        <span class="tag-label">Work</span>
+      </div>
+      <h2 class="section-heading" data-scroll-reveal>Stuff I've built</h2>
+      <p class="section-sub" data-scroll-reveal>From AI/ML research to full-stack web — real projects, real impact.</p>
+
+      <!-- EQUAL PROJECT GRID — all cards same size -->
+      <div class="proj-grid">
+
+        <div class="proj-card" data-scroll-reveal data-index="0" data-href="https://github.com/nishtha911/smart_study_companion">
+          <div class="proj-card-top">
+            <span class="proj-emoji">📚</span>
+            <div class="proj-card-links">
+              <a href="https://github.com/nishtha911/smart_study_companion" target="_blank" onclick="event.stopPropagation()">↗</a>
+            </div>
+          </div>
+          <h4>TrackSpace™</h4>
+          <p>Full-stack study management app — organize subjects, track deadlines with colour-coded alerts, schedule exams, auto-prioritise by difficulty. Flask + MySQL.</p>
+          <div class="proj-stack"><span>Python</span><span>Flask</span><span>MySQL</span><span>Glassmorphism UI</span></div>
+        </div>
+
+        <div class="proj-card" data-scroll-reveal data-index="1" data-href="https://github.com/nishtha911/email-template-builder">
+          <div class="proj-card-top">
+            <span class="proj-emoji">📧</span>
+            <div class="proj-card-links">
+              <a href="https://github.com/nishtha911/email-template-builder" target="_blank" onclick="event.stopPropagation()">↗</a>
+            </div>
+          </div>
+          <div class="proj-internship-tag">Internship Project</div>
+          <h4>Email Template Builder</h4>
+          <p>Drag-and-drop email builder built during internship at Kh Infinite Possibilities. Collapsible sidebar, context-aware controls, and live preview.</p>
+          <div class="proj-stack"><span>React</span><span>Express</span><span>PostgreSQL</span><span>MUI</span></div>
+        </div>
+
+        <div class="proj-card" data-scroll-reveal data-index="2" data-href="https://github.com/nishtha911/ai-resume-critique">
+          <div class="proj-card-top">
+            <span class="proj-emoji">🤖</span>
+            <div class="proj-card-links">
+              <a href="https://github.com/nishtha911/ai-resume-critique" target="_blank" onclick="event.stopPropagation()">↗</a>
+            </div>
+          </div>
+          <h4>AI Resume Critique Pro</h4>
+          <p>Upload a PDF resume, get AI-powered critique &amp; actionable suggestions. Uses GROQ API for fast LLM inference.</p>
+          <div class="proj-stack"><span>Python</span><span>Streamlit</span><span>GROQ API</span></div>
+        </div>
+
+        <div class="proj-card" data-scroll-reveal data-index="3" data-href="https://github.com/nishtha911/my-fridge-food">
+          <div class="proj-card-top">
+            <span class="proj-emoji">🍕</span>
+            <div class="proj-card-links">
+              <a href="https://github.com/nishtha911/my-fridge-food" target="_blank" onclick="event.stopPropagation()">↗</a>
+            </div>
+          </div>
+          <h4>My Fridge Food</h4>
+          <p>PERN stack app to track fridge contents and suggest recipes from available ingredients. Full CRUD with PostgreSQL backend.</p>
+          <div class="proj-stack"><span>PostgreSQL</span><span>Express</span><span>React</span><span>Node</span></div>
+        </div>
+
+        <div class="proj-card" data-scroll-reveal data-index="4" data-href="https://github.com/nishtha911/expense-tracker">
+          <div class="proj-card-top">
+            <span class="proj-emoji">💰</span>
+            <div class="proj-card-links">
+              <a href="https://github.com/nishtha911/expense-tracker" target="_blank" onclick="event.stopPropagation()">↗</a>
+            </div>
+          </div>
+          <h4>Expense Tracker</h4>
+          <p>MERN stack expense management with visual charts, category breakdowns and monthly spending analysis.</p>
+          <div class="proj-stack"><span>MongoDB</span><span>Express</span><span>React</span><span>Node</span></div>
+        </div>
+
+        <div class="proj-card" data-scroll-reveal data-index="5" data-href="https://github.com/nishtha911/sgpa-calculator">
+          <div class="proj-card-top">
+            <span class="proj-emoji">🎓</span>
+            <div class="proj-card-links">
+              <a href="https://github.com/nishtha911/sgpa-calculator" target="_blank" onclick="event.stopPropagation()">↗</a>
+            </div>
+          </div>
+          <h4>SGPA Calculator</h4>
+          <p>A student utility to calculate SGPA and CGPA averages across semesters. Clean, minimal, works offline with zero dependencies.</p>
+          <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
+        <div class="proj-card more" data-scroll-reveal data-index="6">
+          <div class="more-content">
+            <span class="more-num">+4</span>
+            <span class="more-text">more in the works 🚧</span>
+            <a href="https://github.com/nishtha911" target="_blank" class="more-cta">GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMICS -->
+  <section class="academics section" id="academics">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-num">04</span>
+        <span class="tag-line"></span>
+        <span class="tag-label">Academics</span>
+      </div>
+      <h2 class="section-heading" data-scroll-reveal>Academic Track Record</h2>
+
+      <div class="academics-grid">
+        <!-- SGPA LINE GRAPH -->
+        <div class="sgpa-card" data-scroll-reveal>
+          <div class="sgpa-header">
+            <span class="sgpa-title">Semester Performance</span>
+            <span class="sgpa-branch">B.E. AI &amp; Data Science · Pune</span>
+          </div>
+          <div class="sgpa-linegraph-wrap">
+            <canvas id="sgpaCanvas" width="480" height="200"></canvas>
+            <div class="sgpa-tooltip" id="sgpaTooltip"></div>
+          </div>
+          <div class="sgpa-x-labels">
+            <span>Sem 1</span><span>Sem 2</span><span>Sem 3</span><span>Sem 4</span><span>Sem 5 ✦</span>
+          </div>
+          <div class="sgpa-footer">
+            <div class="sgpa-stat">
+              <span class="sgpa-stat-val">9.03</span>
+              <span class="sgpa-stat-lbl">Avg SGPA</span>
+            </div>
+            <div class="sgpa-stat">
+              <span class="sgpa-stat-val">9.29</span>
+              <span class="sgpa-stat-lbl">Best Semester</span>
+            </div>
+            <div class="sgpa-stat">
+              <span class="sgpa-stat-val">↑</span>
+              <span class="sgpa-stat-lbl">Trending Up</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTS + CLUB -->
+        <div class="cert-col" data-scroll-reveal>
+
+          <!-- Certificate cards -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge google">G</div>
+            <div class="cert-text">
+              <strong>Introduction to Large Language Models</strong>
+              <span>Google Cloud Skills Boost · Sep 2025</span>
+            </div>
+            <a href="https://www.skills.google/public_profiles/5d45b5f0-b5b6-4502-8070-79639ecc9b1c/badges/17999494" target="_blank" class="cert-link">View ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-issuer-badge forage">F</div>
+            <div class="cert-text">
+              <strong>AWS — Solutions Architecture Job Simulation</strong>
+              <span>Forage Virtual Experience · Sep 2025</span>
+            </div>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_qa5oHvkGEHfnMNxFA_1756721211529_completion_certificate.pdf" target="_blank" class="cert-link">View ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-issuer-badge forage">F</div>
+            <div class="cert-text">
+              <strong>British Airways — Data Science Job Simulation</strong>
+              <span>Forage Virtual Experience · Aug 2025</span>
+            </div>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/tMjbs76F526fF5v3G/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_qa5oHvkGEHfnMNxFA_1756218305860_completion_certificate.pdf" target="_blank" class="cert-link">View ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-issuer-badge udemy">U</div>
+            <div class="cert-text">
+              <strong>The Complete Full-Stack Web Development Bootcamp</strong>
+              <span>Udemy · Jul 2025 · ID UC-1d2ab379</span>
+            </div>
+            <a href="https://www.udemy.com/certificate/UC-1d2ab379-29a3-4c62-baf2-df490fa3be0a/" target="_blank" class="cert-link">View ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-issuer-badge ibm">IBM</div>
+            <div class="cert-text">
+              <strong>Data Fundamentals</strong>
+              <span>Student Ambassador Program with IBM SkillsBuild · Jan 2025</span>
+            </div>
+            <a href="#" target="_blank" class="cert-link">View ↗</a>
+          </div>
+
+          <div class="club-card">
+            <div class="club-badge">Co-Head</div>
+            <h4 class="club-name">CoDE</h4>
+            <p class="club-full">Club of Data Engineers</p>
+            <p class="club-role">Publicity Co-Head</p>
+            <p class="club-desc">Department's official tech &amp; data club. Responsible for outreach, event promotion and club branding.</p>
+            <div class="club-tags">
+              <span>Data Science</span>
+              <span>Community</span>
+              <span>Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS MARQUEE -->
+  <div class="skills-section section" id="skills">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-num">05</span>
+        <span class="tag-line"></span>
+        <span class="tag-label">Tech Stack</span>
+      </div>
+      <h2 class="section-heading" data-scroll-reveal>Tools of the trade</h2>
+    </div>
+    <div class="skills-marquee-wrap">
+      <div class="skills-marquee">
+        <div class="skills-track" id="skillsTrack1">
+          <span class="skill-item" data-cat="ai">Python</span>
+          <span class="skill-item" data-cat="ai">Scikit-learn</span>
+          <span class="skill-item" data-cat="ai">GROQ API</span>
+          <span class="skill-item" data-cat="ai">Pandas</span>
+          <span class="skill-item" data-cat="ai">NumPy</span>
+          <span class="skill-item" data-cat="fe">React</span>
+          <span class="skill-item" data-cat="fe">JavaScript</span>
+          <span class="skill-item" data-cat="fe">HTML5</span>
+          <span class="skill-item" data-cat="fe">CSS3</span>
+          <span class="skill-item" data-cat="fe">Tailwind</span>
+          <!-- duplicate for seamless loop -->
+          <span class="skill-item" data-cat="ai">Python</span>
+          <span class="skill-item" data-cat="ai">Scikit-learn</span>
+          <span class="skill-item" data-cat="ai">GROQ API</span>
+          <span class="skill-item" data-cat="ai">Pandas</span>
+          <span class="skill-item" data-cat="ai">NumPy</span>
+          <span class="skill-item" data-cat="fe">React</span>
+          <span class="skill-item" data-cat="fe">JavaScript</span>
+          <span class="skill-item" data-cat="fe">HTML5</span>
+          <span class="skill-item" data-cat="fe">CSS3</span>
+          <span class="skill-item" data-cat="fe">Tailwind</span>
+        </div>
+      </div>
+      <div class="skills-marquee reverse">
+        <div class="skills-track" id="skillsTrack2">
+          <span class="skill-item" data-cat="be">Node.js</span>
+          <span class="skill-item" data-cat="be">Express</span>
+          <span class="skill-item" data-cat="be">Flask</span>
+          <span class="skill-item" data-cat="db">PostgreSQL</span>
+          <span class="skill-item" data-cat="db">MySQL</span>
+          <span class="skill-item" data-cat="db">MongoDB</span>
+          <span class="skill-item" data-cat="tool">Git</span>
+          <span class="skill-item" data-cat="tool">GitHub</span>
+          <span class="skill-item" data-cat="be">Streamlit</span>
+          <span class="skill-item" data-cat="tool">REST APIs</span>
+          <!-- duplicate -->
+          <span class="skill-item" data-cat="be">Node.js</span>
+          <span class="skill-item" data-cat="be">Express</span>
+          <span class="skill-item" data-cat="be">Flask</span>
+          <span class="skill-item" data-cat="db">PostgreSQL</span>
+          <span class="skill-item" data-cat="db">MySQL</span>
+          <span class="skill-item" data-cat="db">MongoDB</span>
+          <span class="skill-item" data-cat="tool">Git</span>
+          <span class="skill-item" data-cat="tool">GitHub</span>
+          <span class="skill-item" data-cat="be">Streamlit</span>
+          <span class="skill-item" data-cat="tool">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-num">06</span>
+        <span class="tag-line"></span>
+        <span class="tag-label">Contact</span>
+      </div>
+
+      <div class="contact-inner contact-inner-solo">
+        <div class="contact-left" data-scroll-reveal="left">
+          <h2 class="section-heading contact-head">
+            Let's build<br/>something<br/><em>insane.</em>
+          </h2>
+          <p class="contact-sub">Open to internships, collab projects, and cool conversations. Drop me a line.</p>
+        </div>
+
+        <div class="contact-right" data-scroll-reveal="right">
+          <div class="contact-links">
+            <a href="mailto:nishtha.pardesi@gmail.com" class="contact-link-row">
+              <span class="cl-icon">✉</span>
+              <div>
+                <strong>Email</strong>
+                <span>nishtha.pardesi@gmail.com</span>
+              </div>
+              <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://linkedin.com/in/nishtha-pardesi" target="_blank" class="contact-link-row">
+              <span class="cl-icon">in</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>nishtha-pardesi</span>
+              </div>
+              <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://github.com/nishtha911" target="_blank" class="contact-link-row">
+              <span class="cl-icon">⌥</span>
+              <div>
+                <strong>GitHub</strong>
+                <span>nishtha911</span>
+              </div>
+              <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://instagram.com/nishtha_911" target="_blank" class="contact-link-row">
+              <span class="cl-icon">IG</span>
+              <div>
+                <strong>Instagram</strong>
+                <span>@nishtha_911</span>
+              </div>
+              <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://x.com/nishtha_911" target="_blank" class="contact-link-row">
+              <span class="cl-icon">𝕏</span>
+              <div>
+                <strong>Twitter / X</strong>
+                <span>@nishtha_911</span>
+              </div>
+              <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://pinterest.com/nishtha_911" target="_blank" class="contact-link-row">
+              <span class="cl-icon">PT</span>
+              <div>
+                <strong>Pinterest</strong>
+                <span>nishtha_911</span>
+              </div>
+              <span class="cl-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM TICKER -->
+  <div class="ticker-wrap bottom-ticker">
+    <div class="ticker-track reverse-tick">
+      <span>NISHTHA PARDESI ✦</span>
+      <span>AI &amp; DATA SCIENCE ✦</span>
+      <span>BUILT WITH ANTIGRAVITY ✦</span>
+      <span>PUNE 2026 ✦</span>
+      <span>OPEN TO WORK ✦</span>
+      <span>NISHTHA PARDESI ✦</span>
+      <span>AI &amp; DATA SCIENCE ✦</span>
+      <span>BUILT WITH ANTIGRAVITY ✦</span>
+      <span>PUNE 2026 ✦</span>
+      <span>OPEN TO WORK ✦</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-logo">
+          <span class="logo-star">✦</span> nishtha pardesi
+        </div>
+        <p class="footer-credit">
+          Designed &amp; Built with
+          <a href="https://antigravity.dev" target="_blank" class="ag-link">Antigravity</a>
+          · © 2026
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/nishtha911" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/nishtha-pardesi" target="_blank">LinkedIn</a>
+          <a href="mailto:nishtha.pardesi@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
