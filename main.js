@@ -1,6 +1,6 @@
 /* ================================================
-   CLAYMORPHIC PORTFOLIO V2
-   JavaScript - Theme Toggle, Interactions
+   CLAYMORPHIC PORTFOLIO V3
+   JavaScript — Theme Toggle, Interactions
    ================================================ */
 
 'use strict';
@@ -52,7 +52,7 @@ if (navToggle) {
 
 // Close menu on outside click
 document.addEventListener('click', (e) => {
-  if (!e.target.closest('.nav') && navMenu.classList.contains('active')) {
+  if (!e.target.closest('.nav') && navMenu && navMenu.classList.contains('active')) {
     navMenu.classList.remove('active');
     navToggle.classList.remove('active');
   }
@@ -68,7 +68,6 @@ function highlightNav() {
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
     if (window.scrollY >= sectionTop - 200) {
       current = section.getAttribute('id');
     }
@@ -112,32 +111,10 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-// ================== SKILL BAR ANIMATIONS ==================
-
-const skillBars = document.querySelectorAll('.skill-fill');
-
-const skillObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const fill = entry.target;
-      const width = fill.style.width;
-      fill.style.width = '0';
-      
-      setTimeout(() => {
-        fill.style.width = width;
-      }, 100);
-      
-      skillObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
-
-skillBars.forEach(bar => skillObserver.observe(bar));
-
 // ================== CARD ANIMATIONS ON SCROLL ==================
 
 const cards = document.querySelectorAll(
-  '.project-card, .skill-category, .experience-highlight, .contact-link'
+  '.project-card, .skill-category, .experience-highlight, .contact-link, .cert-card, .edu-content, .hackathon-card'
 );
 
 const cardObserver = new IntersectionObserver((entries) => {
@@ -196,4 +173,4 @@ document.body.insertBefore(skipLink, document.body.firstChild);
 
 // ================== LOG ==================
 
-console.log('Soft lavender clay portfolio loaded successfully');
+console.log('Soft lavender clay portfolio V3 loaded successfully');

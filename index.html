@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8"/>
@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
   
   <link rel="stylesheet" href="style.css"/>
 </head>
@@ -27,8 +28,10 @@
       
       <ul class="nav-menu" id="navMenu">
         <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -50,7 +53,7 @@
           </svg>
         </button>
         
-        <button class="nav-toggle" id="navToggle">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span>
           <span></span>
           <span></span>
@@ -64,59 +67,37 @@
     <div class="container">
       <div class="hero-shell">
         <div class="hero-content">
-          <div class="badge">AI Engineer - Available for opportunities</div>
-          <p class="hero-kicker">Nishtha Pardesi</p>
-          
-          <h1>Building intelligent systems that solve real problems</h1>
-          
-          <p>Final-year AI & Data Science student focused on deep learning, data engineering, and shipping impact at scale. Experienced with full-stack development and production ML systems.</p>
-          
+          <div class="badge">AI Engineer &mdash; Available for opportunities</div>
+          <h1>Nishtha Pardesi</h1>
+          <p>AI &amp; Data Science engineering student focused on deep learning, data engineering, and shipping impact at scale. Experienced with full-stack development and production ML systems.</p>
           <div class="cta-group">
             <a href="#projects" class="btn btn-primary">View my work</a>
             <a href="#contact" class="btn btn-secondary">Get in touch</a>
           </div>
-
-          <div class="hero-meta">
-            <div class="meta">
-              <span class="meta-number">9.03</span>
-              <span class="meta-label">CGPA</span>
-            </div>
-            <div class="meta">
-              <span class="meta-number">15+</span>
-              <span class="meta-label">Projects</span>
-            </div>
-            <div class="meta">
-              <span class="meta-number">3rd</span>
-              <span class="meta-label">Pragyantra</span>
-            </div>
-          </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="float-chip chip-top">ML</div>
-          <div class="float-chip chip-right">API</div>
-          <div class="float-chip chip-left">SQL</div>
-          <div class="clay-workspace">
-            <div class="workspace-window">
-              <span></span>
-              <span></span>
-              <span></span>
+          <div class="clay-terminal">
+            <div class="terminal-header">
+              <span class="tdot" style="background:#F06292"></span>
+              <span class="tdot" style="background:#FFD54F"></span>
+              <span class="tdot" style="background:#81C784"></span>
             </div>
-            <div class="chart-line"></div>
-            <div class="chart-bars">
-              <i></i>
-              <i></i>
-              <i></i>
-              <i></i>
-              <i></i>
+            <div class="terminal-body">
+              <p class="code-line"><span class="ck">const</span> <span class="cv">engineer</span> <span class="co">=</span> {</p>
+              <p class="code-line indent"><span class="cp">name</span>: <span class="cs">"Nishtha"</span>,</p>
+              <p class="code-line indent"><span class="cp">focus</span>: <span class="cs">"AI &amp; ML"</span>,</p>
+              <p class="code-line indent"><span class="cp">loves</span>: <span class="cs">"Building Impact"</span></p>
+              <p class="code-line">};</p>
             </div>
-            <div class="workspace-card">
-              <strong>92%</strong>
-              <span>model confidence</span>
+            <div class="terminal-result">
+              <span class="result-icon">&#10022;</span>
+              <span>Ready to build the future</span>
             </div>
           </div>
-          <div class="clay-hand hand-left"></div>
-          <div class="clay-hand hand-right"></div>
+          <div class="float-label label-1">Deep Learning</div>
+          <div class="float-label label-2">Full Stack</div>
+          <div class="float-label label-3">Data Science</div>
         </div>
       </div>
     </div>
@@ -129,7 +110,7 @@
       
       <div class="about-content">
         <p>
-          I'm a final-year AI & Data Science engineering student with a track record of building production systems and shipping real impact. I care deeply about understanding the problem before writing code - precision matters to me, whether that's in algorithm design, code quality, or system architecture.
+          I'm an AI &amp; Data Science engineering student with a track record of building production systems and shipping real impact. I care deeply about understanding the problem before writing code &mdash; precision matters to me, whether that's in algorithm design, code quality, or system architecture.
         </p>
         
         <p>
@@ -141,7 +122,7 @@
           <div class="exp-item">
             <div class="exp-title">Software Development Intern</div>
             <div class="exp-company">Kh Infinite Possibilities Pvt. Ltd.</div>
-            <div class="exp-period">Jan 2026 - Mar 2026</div>
+            <div class="exp-period">Jan 2026 &mdash; Mar 2026</div>
             <ul class="exp-list">
               <li>Built drag-and-drop email template builder (React + TypeScript + PostgreSQL)</li>
               <li>Migrated 15+ UI components from Bootstrap to Material UI</li>
@@ -153,128 +134,146 @@
     </div>
   </section>
 
+  <!-- EDUCATION -->
+  <section class="section education" id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="edu-timeline">
+        <div class="edu-card">
+          <div class="edu-marker"></div>
+          <div class="edu-content">
+            <div class="edu-period">Aug 2023 &mdash; May 2027</div>
+            <h3>Bachelor of Engineering in AI &amp; Data Science</h3>
+            <p class="edu-school">PES Modern College of Engineering</p>
+            <p class="edu-location">Pune, India</p>
+            <div class="edu-tags">
+              <span class="edu-tag">Semester 5 of 8</span>
+              <span class="edu-tag highlight">CGPA: 9.03 / 10</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="edu-card">
+          <div class="edu-marker"></div>
+          <div class="edu-content">
+            <div class="edu-period">May 2023</div>
+            <h3>Higher Secondary Certificate (CBSE 12th)</h3>
+            <p class="edu-school">S.N.B.P International School, Rahatni</p>
+            <p class="edu-location">Pune, India</p>
+            <div class="edu-tags">
+              <span class="edu-tag highlight">Score: 78%</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="edu-card">
+          <div class="edu-marker"></div>
+          <div class="edu-content">
+            <div class="edu-period">2009 &mdash; 2021</div>
+            <h3>Secondary School Certificate (CBSE 10th)</h3>
+            <p class="edu-school">Podar International School, Chinchwad</p>
+            <p class="edu-location">Pune, India</p>
+            <div class="edu-tags">
+              <span class="edu-tag highlight">Score: 92.8%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section class="section skills" id="skills">
     <div class="container">
-      <h2>Skills & Expertise</h2>
+      <h2>Skills &amp; Expertise</h2>
       
       <div class="skills-grid">
         <div class="skill-category">
-          <h3>ML & Data</h3>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">Python</span>
-              <span class="skill-level">90%</span>
+          <h3>ML &amp; Data</h3>
+          <div class="skill-chips">
+            <div class="skill-chip">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 90%"></div>
+            <div class="skill-chip">
+              <i class="devicon-tensorflow-original colored"></i>
+              <span>TensorFlow</span>
             </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">TensorFlow & Deep Learning</span>
-              <span class="skill-level">75%</span>
+            <div class="skill-chip">
+              <i class="devicon-pandas-plain colored"></i>
+              <span>Pandas</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 75%"></div>
+            <div class="skill-chip">
+              <i class="devicon-numpy-plain colored"></i>
+              <span>NumPy</span>
             </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">Pandas & NumPy</span>
-              <span class="skill-level">85%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">SQL</span>
-              <span class="skill-level">80%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 80%"></div>
+            <div class="skill-chip">
+              <i class="devicon-mysql-plain colored"></i>
+              <span>SQL</span>
             </div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3>Backend & DevOps</h3>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">Node.js & Express</span>
-              <span class="skill-level">80%</span>
+          <h3>Backend &amp; DevOps</h3>
+          <div class="skill-chips">
+            <div class="skill-chip">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 80%"></div>
+            <div class="skill-chip">
+              <i class="devicon-express-original"></i>
+              <span>Express</span>
             </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">FastAPI & Flask</span>
-              <span class="skill-level">75%</span>
+            <div class="skill-chip">
+              <i class="devicon-fastapi-plain colored"></i>
+              <span>FastAPI</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 75%"></div>
+            <div class="skill-chip">
+              <i class="devicon-flask-original"></i>
+              <span>Flask</span>
             </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">PostgreSQL & MongoDB</span>
-              <span class="skill-level">75%</span>
+            <div class="skill-chip">
+              <i class="devicon-postgresql-plain colored"></i>
+              <span>PostgreSQL</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">REST API Design</span>
-              <span class="skill-level">70%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 70%"></div>
+            <div class="skill-chip">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
             </div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3>Frontend & UI</h3>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">React & TypeScript</span>
-              <span class="skill-level">85%</span>
+          <h3>Frontend &amp; UI</h3>
+          <div class="skill-chips">
+            <div class="skill-chip">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 85%"></div>
+            <div class="skill-chip">
+              <i class="devicon-typescript-plain colored"></i>
+              <span>TypeScript</span>
             </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">JavaScript & HTML/CSS</span>
-              <span class="skill-level">85%</span>
+            <div class="skill-chip">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 85%"></div>
+            <div class="skill-chip">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
             </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">Tailwind & Material UI</span>
-              <span class="skill-level">80%</span>
+            <div class="skill-chip">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS3</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 80%"></div>
+            <div class="skill-chip">
+              <i class="devicon-tailwindcss-original colored"></i>
+              <span>Tailwind</span>
             </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">Responsive Design</span>
-              <span class="skill-level">85%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-fill" style="width: 85%"></div>
+            <div class="skill-chip">
+              <i class="devicon-materialui-plain colored"></i>
+              <span>Material UI</span>
             </div>
           </div>
         </div>
@@ -301,7 +300,7 @@
             <span>FastAPI</span>
             <span>ML Classification</span>
           </div>
-          <a href="https://github.com/nishtha911/CampusWallet" class="project-link">View -></a>
+          <a href="https://github.com/nishtha911/CampusWallet" target="_blank" class="project-link">View -&gt;</a>
         </div>
 
         <!-- SkimLit Pro -->
@@ -316,7 +315,7 @@
             <span>React</span>
             <span>NLP</span>
           </div>
-          <a href="https://github.com/nishtha911/SkimLit-Pro" class="project-link">View -></a>
+          <a href="https://github.com/nishtha911/SkimLit-Pro" target="_blank" class="project-link">View -&gt;</a>
         </div>
 
         <!-- NewCityAgent -->
@@ -331,7 +330,7 @@
             <span>Gemini API</span>
             <span>Agentic AI</span>
           </div>
-          <a href="https://github.com/TANAY270/NewCityAgent" class="project-link">View -></a>
+          <a href="https://github.com/TANAY270/NewCityAgent" target="_blank" class="project-link">View -&gt;</a>
         </div>
 
         <!-- IPL Dashboard -->
@@ -346,7 +345,7 @@
             <span>Pandas</span>
             <span>Recharts</span>
           </div>
-          <a href="https://github.com/nishtha911/ipl-data-analysis" class="project-link">View -></a>
+          <a href="https://github.com/nishtha911/ipl-data-analysis" target="_blank" class="project-link">View -&gt;</a>
         </div>
 
         <!-- Email Template Builder -->
@@ -361,7 +360,7 @@
             <span>Express</span>
             <span>PostgreSQL</span>
           </div>
-          <a href="https://github.com/nishtha911/email-template-builder" class="project-link">View -></a>
+          <a href="https://github.com/nishtha911/email-template-builder" target="_blank" class="project-link">View -&gt;</a>
         </div>
 
         <!-- AI Resume Critique -->
@@ -376,7 +375,7 @@
             <span>Groq API</span>
             <span>LLMs</span>
           </div>
-          <a href="https://github.com/nishtha911/ai-resume-critique" class="project-link">View -></a>
+          <a href="https://github.com/nishtha911/ai-resume-critique" target="_blank" class="project-link">View -&gt;</a>
         </div>
 
         <!-- TrackSpace -->
@@ -391,7 +390,7 @@
             <span>Python</span>
             <span>UI/UX</span>
           </div>
-          <a href="https://github.com/nishtha911/trackspace" class="project-link">View -></a>
+          <a href="https://github.com/nishtha911/trackspace" target="_blank" class="project-link">View -&gt;</a>
         </div>
 
         <!-- My Fridge Food -->
@@ -406,7 +405,7 @@
             <span>Express</span>
             <span>Node.js</span>
           </div>
-          <a href="https://github.com/nishtha911/my-fridge-food" class="project-link">View -></a>
+          <a href="https://github.com/nishtha911/my-fridge-food" target="_blank" class="project-link">View -&gt;</a>
         </div>
 
         <!-- SGPA Calculator -->
@@ -420,7 +419,7 @@
             <span>JavaScript</span>
             <span>Charts</span>
           </div>
-          <a href="https://github.com/nishtha911/sgpa-calculator" class="project-link">View -></a>
+          <a href="https://github.com/nishtha911/sgpa-calculator" target="_blank" class="project-link">View -&gt;</a>
         </div>
 
       </div>
@@ -429,7 +428,7 @@
       <div class="hackathon-card">
         <div class="hackathon-badge">3rd Place</div>
         <h3>Pragyantra National Hackathon</h3>
-        <p class="hackathon-subtitle">EdTech Domain Winner - Team Artemis</p>
+        <p class="hackathon-subtitle">EdTech Domain Winner &mdash; Team Artemis</p>
         <p class="hackathon-desc">Built an AI-powered adaptive learning platform measuring how students think, not just what they answer. In an 8-hour sprint, I learned the value of stepping forward, taking ownership, and communicating clearly under pressure.</p>
         <div class="hackathon-tech">
           <span>Next.js</span>
@@ -438,7 +437,207 @@
           <span>PostgreSQL</span>
           <span>Redis</span>
         </div>
-        <a href="https://github.com/nishtha911/Pragyantra-ED14-ET-3" class="btn btn-secondary">View project</a>
+        <a href="https://github.com/nishtha911/Pragyantra-ED14-ET-3" target="_blank" class="btn btn-secondary">View project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <h2>Certifications &amp; Learning</h2>
+      
+      <div class="certs-grid">
+
+        <!-- Cert 1: Udemy TensorFlow -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo">
+              <img src="https://cdn.simpleicons.org/udemy/A435F0" alt="Udemy"/>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Udemy</p>
+              <h3>TensorFlow for Deep Learning Bootcamp</h3>
+            </div>
+          </div>
+          <p class="cert-date">May 2026</p>
+          <div class="cert-footer">
+            <span class="cert-id">UC-59f3cfb7...b0c5</span>
+            <a href="https://udemy.com/certificate/UC-59f3cfb7-76e4-4431-8785-b658ed1ab0c5" target="_blank" rel="noopener" class="cert-link">View &#8599;</a>
+          </div>
+        </div>
+
+        <!-- Cert 2: Simplilearn Neural Networks -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo-initial" style="background-color: #FF6B00">
+              <span>S</span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Simplilearn</p>
+              <h3>Introduction to Neural Networks</h3>
+            </div>
+          </div>
+          <p class="cert-date">Apr 2026</p>
+          <div class="cert-footer">
+            <span class="cert-id">10098862</span>
+            <a href="https://certificates.simplicdn.net/share/10098862_9922515_1776104837101.pdf" target="_blank" rel="noopener" class="cert-link">View &#8599;</a>
+          </div>
+        </div>
+
+        <!-- Cert 3: Udemy AI Engineer -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo">
+              <img src="https://cdn.simpleicons.org/udemy/A435F0" alt="Udemy"/>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Udemy</p>
+              <h3>AI Engineer Agentic Track</h3>
+            </div>
+          </div>
+          <p class="cert-date">Jan 2026</p>
+          <div class="cert-footer">
+            <span class="cert-id">UC-ff906528...f269</span>
+            <a href="https://www.udemy.com/certificate/UC-ff906528-d5eb-4d00-a77b-ed771b4ef269/" target="_blank" rel="noopener" class="cert-link">View &#8599;</a>
+          </div>
+        </div>
+
+        <!-- Cert 4: Cognitive Class Python -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo">
+              <img src="https://cdn.simpleicons.org/ibm/052FAD" alt="IBM / Cognitive Class"/>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Cognitive Class</p>
+              <h3>Python 101 for Data Science</h3>
+            </div>
+          </div>
+          <p class="cert-date">Dec 2025</p>
+          <div class="cert-footer">
+            <span class="cert-id">6d4be5da...d23</span>
+            <a href="https://courses.cognitiveclass.ai/certificates/6d4be5daa19a4770945a1fbe9f669d23#" target="_blank" rel="noopener" class="cert-link">View &#8599;</a>
+          </div>
+        </div>
+
+        <!-- Cert 5: Mimo SQL -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo-initial" style="background-color: #8647E0">
+              <span>M</span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Mimo</p>
+              <h3>SQL</h3>
+            </div>
+          </div>
+          <p class="cert-date">Dec 2025</p>
+        </div>
+
+        <!-- Cert 6: Google Cloud LLMs -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo">
+              <img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="Google Cloud"/>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Google Cloud Skills Boost</p>
+              <h3>Introduction to Large Language Models</h3>
+            </div>
+          </div>
+          <p class="cert-date">Sep 2025</p>
+          <div class="cert-footer">
+            <a href="https://www.cloudskillsboost.google/public_profiles/5d45b5f0-b5b6-4502-8070-79639ecc9b1c/badges/17999494" target="_blank" rel="noopener" class="cert-link">View &#8599;</a>
+          </div>
+        </div>
+
+        <!-- Cert 7: Forage AWS -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo-initial" style="background-color: #2AAA8A">
+              <span>F</span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Forage</p>
+              <h3>AWS Solutions Architecture Job Simulation</h3>
+            </div>
+          </div>
+          <p class="cert-date">Sep 2025</p>
+          <div class="cert-footer">
+            <span class="cert-id">r2s9Cwr7rYKYCQdNA</span>
+          </div>
+        </div>
+
+        <!-- Cert 8: Forage BA -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo cert-logo-initial" style="background-color: #2AAA8A">
+              <span>F</span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Forage</p>
+              <h3>British Airways Data Science Job Simulation</h3>
+            </div>
+          </div>
+          <p class="cert-date">Aug 2025</p>
+          <div class="cert-footer">
+            <span class="cert-id">LsrBnNxabZSFdTzSp</span>
+          </div>
+        </div>
+
+        <!-- Cert 9: Udemy Full Stack -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo">
+              <img src="https://cdn.simpleicons.org/udemy/A435F0" alt="Udemy"/>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Udemy</p>
+              <h3>The Complete Full-Stack Web Development Bootcamp</h3>
+            </div>
+          </div>
+          <p class="cert-date">Jul 2025</p>
+          <div class="cert-footer">
+            <span class="cert-id">UC-1d2ab379...be0a</span>
+            <a href="https://www.udemy.com/certificate/UC-1d2ab379-29a3-4c62-baf2-df490fa3be0a/" target="_blank" rel="noopener" class="cert-link">View &#8599;</a>
+          </div>
+        </div>
+
+        <!-- Cert 10: IBM SkillsBuild -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo">
+              <img src="https://cdn.simpleicons.org/ibm/052FAD" alt="IBM"/>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">IBM SkillsBuild</p>
+              <h3>Data Fundamentals (Student Ambassador)</h3>
+            </div>
+          </div>
+          <p class="cert-date">Jan 2025</p>
+          <div class="cert-footer">
+            <a href="https://www.credly.com/badges/0ce8f086-3f7f-4ad8-82f0-238f52942a07/linked_in_profile" target="_blank" rel="noopener" class="cert-link">View &#8599;</a>
+          </div>
+        </div>
+
+        <!-- Cert 11: AWS Academy -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-logo">
+              <img src="https://cdn.simpleicons.org/amazonwebservices/FF9900" alt="AWS"/>
+            </div>
+            <div class="cert-info">
+              <p class="cert-provider">Amazon Web Services (AWS)</p>
+              <h3>AWS Academy Cloud Foundations</h3>
+            </div>
+          </div>
+          <p class="cert-date">Sep 2024</p>
+          <div class="cert-footer">
+            <a href="https://www.credly.com/badges/2e12e23b-0eec-4c8d-a761-1dddfa0d5823/public_url" target="_blank" rel="noopener" class="cert-link">View &#8599;</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -490,4 +689,3 @@
   <script src="main.js"></script>
 </body>
 </html>
-
